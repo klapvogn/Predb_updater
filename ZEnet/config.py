@@ -5,18 +5,21 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # IRC Configuration
-IRC_SERVER = "IRC NETWORK"
+IRC_SERVER = "irc.zenet.org"
 IRC_PORT = 6697
-IRC_NICKNAME = "NICKNAME"
-IRC_REALNAME = "REALNAME"
+IRC_NICKNAME = "Peanut"
+IRC_REALNAME = "Im a bad Peanut"
 IRC_NICKSERV_PASSWORD = os.getenv("IRC_NICKSERV_PASSWORD")
 
+# Cert
+IRC_CERT_FILE = '/path/to/your/cert.pem'
+
 # Channels
-CHANNEL_MONITOR = "#CHANNEL"
-CHANNEL_LOG = "#CHANNEL"
+CHANNEL_MONITOR = "#CHANNEL1"
+CHANNEL_LOG = "#CHANNEL2"
 
 # Target announcer
-ANNOUNCER_NICK = "ANNOUNCE_NICK"
+ANNOUNCER_NICK = "NICKNAME"
 
 # Database Configuration
 DB_CONFIG = {
