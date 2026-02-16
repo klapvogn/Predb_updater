@@ -11,6 +11,10 @@ IRC_NICKNAME = "YOUR_BOT_NICKNAME"
 IRC_REALNAME = "SOMETHING"
 IRC_NICKSERV_PASSWORD = os.getenv("IRC_NICKSERV_PASSWORD")
 
+# Logging configuration
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+LOG_FILE = os.path.join(BASE_DIR, 'logs', 'addgenre.log')
+
 # Cert
 IRC_CERT_FILE = '/path/to/your/cert.pem'
 

@@ -2,6 +2,7 @@ import irc.client
 import irc.connection
 import ssl
 import re
+import os
 import mysql.connector
 import sys
 import config
@@ -20,7 +21,7 @@ logger.handlers.clear()
 formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
 
 # File handler ONLY
-file_handler = logging.FileHandler('/home/klapvogn/apps/ZEnet/logs/addgenre.log')
+file_handler = logging.FileHandler(config.LOG_FILE)
 file_handler.setFormatter(formatter)
 logger.addHandler(file_handler)
 
