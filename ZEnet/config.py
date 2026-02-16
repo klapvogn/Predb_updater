@@ -5,10 +5,10 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # IRC Configuration
-IRC_SERVER = "irc.zenet.org"
+IRC_SERVER = "YOUR_IRC_SERVER_HERE"
 IRC_PORT = 6697
-IRC_NICKNAME = "Peanut"
-IRC_REALNAME = "Im a bad Peanut"
+IRC_NICKNAME = "YOUR_BOT_NICKNAME"
+IRC_REALNAME = "SOMETHING"
 IRC_NICKSERV_PASSWORD = os.getenv("IRC_NICKSERV_PASSWORD")
 
 # Cert
